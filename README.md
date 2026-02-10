@@ -71,5 +71,41 @@ This DMS ensures:
 -Enhanced client experience through real-time notifications.
 -Reduced chances of document loss or miscommunication.
 
+<h1>My Contribution & System Improvements</h1>
+
+<p>After forking this project, I revisited the NTSA Document Management System independently with the goal of deepening my understanding of full-stack system design and improving key functional and structural aspects of the application.</p>
+
+<h1>The following enhancements and refactors were undertaken.</h1>
+
+<h1>1️⃣ Backend Logic Refactor</h1>
+<p>- Reviewed and refactored PHP backend logic to improve readability, maintainability, and separation of concerns.</br>
+- Reduced tightly coupled logic between request handling, database access, and response generation.</br>
+- Improved request validation to ensure cleaner and more predictable API behavior.</p>
+
+<h1>2️⃣ Improved Database Schema Explanation</h1>
+<p>- Documented the database structure more clearly, explaining the purpose of each table and key fields.</br>
+- Clarified relationships between client records, document submissions, and processing status tracking.</br>
+- Improved naming consistency to make the schema easier to understand and extend.</p>
+
+<h1>3️⃣ UI Logic & Status Flow Improvements</h1>
+<p>- Cleaned up React component structure to remove duplicate or test-only code.</br>
+- Improved clarity of document status progression (Submitted → In Review → Processed → Collected).</br>
+- Ensured UI state reflects backend data more accurately and consistently.</br>
+- Removed development-only markers and test messages once functionality was confirmed.</p>
+
+<h1>4️⃣ Enhanced Error Handling</h1>
+<p>- Added clearer error handling on both frontend and backend.</br>
+- Improved user-facing error messages for failed submissions or invalid inputs.</br>
+- Ensured API errors return structured and meaningful responses.</p>
+
+<h1>5️⃣ API Design & Documentation</h1>
+<p>- Defined clearer API endpoints for document submission, retrieval, and status updates.</br>
+- Began documenting API behavior, expected payloads, and response formats.</br>
+- Improved readiness for future integrations and scalability.</p>
+
+<h1>Purpose of These Improvements</h1>
+<p>These changes aim to transition the system from a functional prototype into a more maintainable, well-documented, and extensible application, while serving as a learning platform for deeper understanding of real-world full-stack development.</p>
+
+
 
 
