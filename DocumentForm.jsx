@@ -386,7 +386,7 @@ function DocumentForm() {
     };
 
     try {
-      const response = await fetch("http://localhost/document-system/api.1/submit.php", {
+      const response = await fetch("http://localhost/document-system/api/submit.php", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(submission)
@@ -430,7 +430,7 @@ function DocumentForm() {
     try {
       const local = JSON.parse(localStorage.getItem("submissions")) || [];
 
-      const response = await fetch("http://localhost/document-system/api.1/search.php", {
+      const response = await fetch("http://localhost/document-system/api/search.php", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ query: searchTerm.trim() }),
@@ -474,7 +474,7 @@ function DocumentForm() {
   // List all records
   const handleListAll = async () => {
     try {
-      const response = await fetch("http://localhost/document-system/api.1/search.php", {
+      const response = await fetch("http://localhost/document-system/api/search.php", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ query: "__ALL__" }) // special query to list all
@@ -741,7 +741,7 @@ function DocumentForm() {
                                   row.id === item.id ? { ...row, document_stage: updatedStage } : row
                                 ));
                                 // Send update to backend
-                                await fetch('http://localhost/document-system/api.1/update_stage.php', {
+                                await fetch('http://localhost/document-system/api/update_stage.php', {
                                   method: 'POST',
                                   headers: { 'Content-Type': 'application/json' },
                                   body: JSON.stringify({ id: item.id, document_stage: updatedStage })
